@@ -1,11 +1,14 @@
 <?php
 $output=[];
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-if(file_exists('simplehtmldom_1_9_1\simple_html_dom.php')){
-  include 'simplehtmldom_1_9_1\simple_html_dom.php';
+if(file_exists('simplehtmldom_1_9_1/simple_html_dom.php')){
+  include 'simplehtmldom_1_9_1/simple_html_dom.php';
+  }
+  else if(!file_exists('simplehtmldom_1_9_1/simple_html_dom.php')){
+    exit("DOM file not found");
   }
   else{
-    exit("DOM file not found");
+    exit("fail to load files");
   }
   
 if(isset($_POST["url"])){
