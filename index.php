@@ -61,8 +61,8 @@ else{
 <script src="lib/MfunctionsLap.js"></script>
 </head>
 <body>
-  <nav>
-    Scraping || Video URls
+  <nav class="w3-blue">
+  <i>  Scraping </i>|| Video URls
   </nav>
 <br>
 <div id="box">
@@ -70,8 +70,8 @@ else{
     Get all Video URL of any website in JSON format
   </section>
 <form class="w3-padding" method="post">
-  <b>WEB LINK:</b>
-  <input class="w3-padding w3-block" type="url" name="url" placeholder="Enter web URL : https://videos.com" required><button type="submit" class="w3-button w3-green" style="margin-top:3px;">start</button>
+  <b>WEB LINK: <i style="font-weight:400;"> Ex : https://coverr.co </i></b>
+  <input class="w3-padding w3-block" type="url" name="url" placeholder="Enter web URL : https://coverr.co" required><button type="submit" class="w3-button w3-blue" style="margin-top:3px;">start</button>
 </form>
 
 </div>
@@ -81,9 +81,9 @@ else{
 <div id="box">
   <p id="dataHolder" hidden><?php echo json_encode($output);?>
 </p>
-<textarea value="<?php echo json_encode($output);?>" class="w3-block w3-code" disabled>
+<textarea value="<?php echo json_encode($output);?>" class="w3-block w3-code" style="border-color:rgb(0, 138, 230);" disabled>
 </textarea>
-<button class="w3-button w3-green" id="copy">COPY</button>
+<button class="w3-button w3-blue" id="copy">COPY</button>
 </div>
 <footer class="w3-padding  w3-center w3-black">
   <a  style="color:white;text-decoration: underline !important;" href="https://austinesamuel.netlify.app" >Austine Samuel </a>API Projects 2021
